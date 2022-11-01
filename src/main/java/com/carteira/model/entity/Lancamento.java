@@ -13,12 +13,24 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
 import com.carteira.model.enums.StatusLancamento;
 import com.carteira.model.enums.TipoLancamento;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Entity
+@Table(name = "lancamento")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Lancamento {
 
 	@Id

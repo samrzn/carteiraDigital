@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EntityScan(basePackages = {"com.carteira.model.entity"})
 @EnableJpaRepositories(basePackages = {"com.carteira.repositories"})
-@ComponentScan(basePackages = {"com.carteira.controller", "com.carteira.service", "com.carteira.service.impl"})
+@ComponentScan(basePackages = {"com.carteira.controller", "com.carteira.services", "com.carteira.services.impl"})
 @SpringBootApplication
 public class CarteiraDigitalApplication {
 
